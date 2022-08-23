@@ -60,7 +60,7 @@ body {
     background-size: 0.05em 0.05em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    width: 100%;
     animation: l_shad-anim 15s linear infinite;
 }
 
