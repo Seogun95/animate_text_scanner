@@ -8,15 +8,27 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="loader">
-            <div class="loader-box">
-                <p data-shadow="서근 개발노트!">서근 개발노트!</p>
-                <div class="blurBox">
-                    <div class="blur back"></div>
-                    <div class="show-txt"></div>
-                    <div class="blur"></div>
+        <div id="wrapper" class="loaded">
+            <!-- 블로그 로딩 코드 start -->
+
+            <div id="loader">
+                <div class="loader-box">
+                    <p data-shadow="빡코딩 하는 서근 개발노트">빡코딩 하는 서근 개발노트</p>
+                    <div class="blurBox">
+                        <div class="blur back"></div>
+                        <div class="show-txt"></div>
+                        <div class="blur"></div>
+                    </div>
                 </div>
             </div>
+
+            <script type="text/javascript">
+                $(window).on('load', function () {
+                    setTimeout(function () {
+                        $('#loader').fadeOut();
+                    }, 2000);
+                });
+            </script>
         </div>
     </body>
 </html>
