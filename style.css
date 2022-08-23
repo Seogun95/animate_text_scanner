@@ -185,3 +185,14 @@ body {
     box-shadow: 0 0 70px 20px #febf00;
     clip-path: inset(0);
 }
+
+@media (max-width: 738px) {
+    #loader .loader-box > p {
+        font-size: 2rem;
+    }
+
+    #loader .blurBox {
+        height: 2.4rem;
+        width: 270%;
+    }
+}
