@@ -11,8 +11,9 @@
         <div id="wrapper" class="loaded">
             <!-- 블로그 로딩 코드 start -->
 
-            <div id="loader">
+            <div class="loader">
                 <div class="loader-box">
+                    <span>LOADING...</span>
                     <p data-shadow="빡코딩 하는 서근 개발노트">빡코딩 하는 서근 개발노트</p>
                     <div class="blurBox">
                         <div class="blur back"></div>
@@ -22,12 +23,11 @@
                 </div>
             </div>
 
+            <!--업로드 로딩 끝-->
             <script type="text/javascript">
-                $(window).on('load', function () {
-                    setTimeout(function () {
-                        $('#loader').fadeOut();
-                    }, 2000);
-                });
+                setTimeout(() => {
+                    $('.loader').fadeOut(200);
+                }, 3200);
             </script>
         </div>
     </body>
