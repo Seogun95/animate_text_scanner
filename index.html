@@ -9,8 +9,6 @@
     </head>
     <body>
         <div id="wrapper" class="loaded">
-            <!-- 블로그 로딩 코드 start -->
-
             <div class="loader">
                 <div class="loader-box">
                     <span>LOADING...</span>
@@ -22,12 +20,12 @@
                     </div>
                 </div>
             </div>
-
-            <!--업로드 로딩 끝-->
             <script type="text/javascript">
-                setTimeout(() => {
-                    $('.loader').fadeOut(200);
-                }, 3200);
+                $(window).on('load', function () {
+                    setTimeout(function () {
+                        $('.loader').fadeOut(200);
+                    }, 350);
+                });
             </script>
         </div>
     </body>
